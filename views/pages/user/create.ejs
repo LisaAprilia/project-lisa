@@ -1,0 +1,29 @@
+<%- include('../components/navbar') %>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mt-5">
+        <div class="card">
+            <div class="card-header">
+                <center>
+                <h4>TAMBAH DATA USER</h4>
+                </center>
+            </div>
+            <div class="card-body">
+                <form action="/users">
+                    <input type="text" name="nama" class="form-control mb-3" placeholder="Nama user..." required="">
+                    <input type="text" name="email" class="form-control mb-3" placeholder="Email user..." required="">
+                    <input type="password" name="password" class="form-control mb-3" placeholder="Password user..." required="">
+                    <button class="btn btn-outline-secondary" type="submit">Simpan</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<%- include('../components/footer') %>

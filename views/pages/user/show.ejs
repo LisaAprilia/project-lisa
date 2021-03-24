@@ -1,0 +1,28 @@
+<%- include('../components/navbar') %>
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 mt-5">
+        <div class="card">
+            <div class="card-header">
+                <center>
+                    <h4>DETAIL USER</h4>
+                </center>
+            </div>
+            <div class="card-body">
+                <form action="/users">
+                  <li>Nama: <strong><%=user.name %></strong></li>
+                  <li>Email: <strong><%=user.email %></strong></li>
+              </form>
+
+              
+              <a href="/users/edit/:id">Edit</a>
+              <a href="/users/id">Delete</a>
+              <a href="/users">Kembali</a>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
